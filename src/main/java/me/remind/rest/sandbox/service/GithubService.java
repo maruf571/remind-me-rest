@@ -7,5 +7,5 @@ import java.util.UUID;
 
 public interface GithubService {
 
-    List<GithubResponseDto> findGithubRepositoriesByUserName(UUID id);
+    List<GithubResponseDto> findGithubRepositoriesByUserId(UUID id);
 }

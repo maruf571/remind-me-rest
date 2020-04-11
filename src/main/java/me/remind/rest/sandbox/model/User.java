@@ -24,6 +24,6 @@ public class User extends AbstractEntity {
     @Column(length = 32)
     private String position;
 
-    @Column(length = 255)
+    @Column(length = 128)
     private String gitHubProfileUrl;
 }

@@ -4,7 +4,6 @@ import lombok.Data;
 import me.remind.rest.sandbox.model.User;
 
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;

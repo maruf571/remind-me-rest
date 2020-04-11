@@ -65,7 +65,7 @@ public class UserController {
 
     @GetMapping("/{id}/repositories")
     public List<GithubResponseDto> findRepositoriesByUserId(@PathVariable UUID id) {
-        return  githubService.findGithubRepositoriesByUserName(id);
+        return  githubService.findGithubRepositoriesByUserId(id);
     }
 
 }

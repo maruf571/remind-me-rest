@@ -19,11 +19,11 @@ public abstract class AbstractEntity {
     @Column(name = "id", unique = true, nullable = false)
     private UUID id;
 
-    @Column(name = "created", unique = false, nullable = false)
+    @Column(name = "created", nullable = false)
     @Temporal(TemporalType.TIMESTAMP)
     protected Date created;
 
-    @Column(name = "lastModified", unique = false, nullable = false)
+    @Column(name = "lastModified", nullable = false)
     @Temporal(TemporalType.TIMESTAMP)
     protected Date lastModified;
 

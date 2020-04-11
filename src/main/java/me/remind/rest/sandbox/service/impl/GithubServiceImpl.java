@@ -7,7 +7,6 @@ import me.remind.rest.sandbox.exception.UserException;
 import me.remind.rest.sandbox.model.User;
 import me.remind.rest.sandbox.model.repository.UserRepository;
 import me.remind.rest.sandbox.service.GithubService;
-import me.remind.rest.sandbox.service.UserService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.*;
@@ -45,7 +44,7 @@ public class GithubServiceImpl implements GithubService {
     }
 
     @Override
-    public List<GithubResponseDto> findGithubRepositoriesByUserName(UUID id) {
+    public List<GithubResponseDto> findGithubRepositoriesByUserId(UUID id) {
         User user = userRepository.findById(id).orElseThrow(
                 () -> new UserException("User not found", HttpStatus.NOT_FOUND)
         );
