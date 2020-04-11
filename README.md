@@ -64,16 +64,18 @@ find by id
 ```
 GET http://localhost:12000/users/60953a28-df70-4ec8-9f6d-8effd8c50cca
 ```
+
 delete by id
 ```
 DELETE http://localhost:12000/users/60953a28-df70-4ec8-9f6d-8effd8c50cca
 ```
 
 external api call
-``````
+```
 GET http://localhost:12000/users/60953a28-df70-4ec8-9f6d-8effd8c50cca/repositories
 ```
 
 
 
-
+## Special instruction
+Please add own github token on the application.yml to avoid 60 call/hour api rate limit. 

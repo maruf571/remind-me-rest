@@ -33,6 +33,6 @@ test:
     url: https://jsonplaceholder.typicode.com/posts/1
 
 github:
-  token: 0f67cb94dc067ff9a209775fe66e4369d772e202
+  token:
   baseUrl: https://api.github.com/
 
